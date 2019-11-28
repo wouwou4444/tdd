@@ -4,7 +4,8 @@ pytest -v
 
 ## Naming convention
 
-Documentation available here : https://docs.pytest.org/en/latest/goodpractices.documentation available here : html#test-discovery
+Documentation available here : https://docs.pytest.org/en/latest/goodpractices.documentation 
+
 * file name should start by test for automatic discovery or file name can be explicity passed on th ecommand line
 
 * function name **must** start by test
