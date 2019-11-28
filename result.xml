@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="3" hostname="cidburten507" name="pytest" skipped="2" tests="16" time="0.136" timestamp="2019-11-27T18:04:12.199306"><testcase classname="test_compare" file="test_compare.py" line="2" name="test_greater" time="0.000"><skipped message="" type="pytest.xfail"></skipped></testcase><testcase classname="test_compare" file="test_compare.py" line="7" name="test_greater_equal" time="0.001"></testcase><testcase classname="test_compare" file="test_compare.py" line="13" name="test_less" time="0.000"><skipped message="unconditional skip" type="pytest.skip">test_compare.py:13: unconditional skip</skipped></testcase><testcase classname="test_div_by_13" file="test_div_by_13.py" line="2" name="test_divisible_by_13" time="0.002"></testcase><testcase classname="test_div_by_3_6" file="test_div_by_3_6.py" line="2" name="test_divisible_by_3" time="0.000"></testcase><testcase classname="test_div_by_3_6" file="test_div_by_3_6.py" line="5" name="test_divisible_by_6" time="0.002"><failure message="assert 3 == 0
+  -3
+  +0">input_value = 39
+
+    def test_divisible_by_6(input_value):
+&gt;       assert input_value % 6 == 0
+E       assert 3 == 0
+E         -3
+E         +0
+
+test_div_by_3_6.py:7: AssertionError</failure></testcase><testcase classname="test_multiplication" file="test_multiplication.py" line="2" name="test_multiplication_11[1-11]" time="0.002"></testcase><testcase classname="test_multiplication" file="test_multiplication.py" line="2" name="test_multiplication_11[2-22]" time="0.001"></testcase><testcase classname="test_multiplication" file="test_multiplication.py" line="2" name="test_multiplication_11[3-35]" time="0.001"><failure message="assert 33 == 35
+  -33
+  +35">num = 3, output = 35
+
+    @pytest.mark.parametrize(&quot;num, output&quot;, [(1, 11), (2, 22), (3, 35), (4,44)])
+    def test_multiplication_11(num, output):
+&gt;       assert num * 11 == output
+E       assert 33 == 35
+E         -33
+E         +35
+
+test_multiplication.py:5: AssertionError</failure></testcase><testcase classname="test_multiplication" file="test_multiplication.py" line="2" name="test_multiplication_11[4-44]" time="0.002"></testcase><testcase classname="test_mycode.TestMyClass" file="test_mycode.py" line="4" name="test_custom_func_x" time="0.000"></testcase><testcase classname="test_mycode.TestMyClass" file="test_mycode.py" line="7" name="test_custom_non_lin_num_list" time="0.001"></testcase><testcase classname="test_mycode.TestMyClass" file="test_mycode.py" line="11" name="test_hello" time="0.000"></testcase><testcase classname="test_mycode.TestMyClass" file="test_mycode.py" line="14" name="test_num_list" time="0.000"></testcase><testcase classname="test_tuto_01" file="test_tuto_01.py" line="2" name="test_sqrt" time="0.001"></testcase><testcase classname="test_tuto_01" file="test_tuto_01.py" line="6" name="testsquare" time="0.002"><failure message="assert 49 == 40
+  -49
+  +40">def testsquare():
+        num = 7
+&gt;       assert num * num == 40
+E       assert 49 == 40
+E         -49
+E         +40
+
+test_tuto_01.py:9: AssertionError</failure></testcase></testsuite></testsuites>
