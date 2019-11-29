@@ -35,8 +35,20 @@ Documentation available here : https://docs.pytest.org/en/latest/goodpractices.d
         with pytest.raises(SystemExit):
             f()
 
+## Detailed summary report
 
-# Markers
+    pytest -rA
+
+
+# Execute specific tests: keywords, markers, ids
+
+## "selecting test by keyword
+
+    pytest -k "keyword"
+
+## selecting test by marker
+
+    pytest -m marker
 
 ## warning 
 
@@ -56,4 +68,13 @@ Documentation available here : https://docs.pytest.org/en/latest/goodpractices.d
 
 ## parametrization and factories
 
+# Dropping to Python Debugger (pdb)
 
+## start debugger on first error and stop
+
+    pytest -x --pdb 
+
+
+## Start debugger with first test
+
+    pytest --trace
