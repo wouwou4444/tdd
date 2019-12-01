@@ -14,15 +14,23 @@ Documentation available here : https://docs.pytest.org/en/latest/goodpractices.d
 
 ## how to execute
 
+### on the command line
+
 * pytest -v 
 
 * pytest -v file_name
 
-## test convention : assert
+### in a notebook
+
+* pytest.main([-v], [-rA])
+
+## test syntax
+
+### assert
 
 * use assert for most of test
 
-## assert exception
+### assert exception
 
     import pytest
 
